@@ -42,11 +42,12 @@ Ce programme permet de travailler sur des lots de configurations.
 L'utilisation des principales fonctions est guidée par une série de menus.
 
 Menu principal:  
-- 1. Créer une série de configurations et les classer
-- 2. Reconstruire (sans reclasser) les représentation graphiques d'une série de configurations
-- 3. Comparer les performances de plusieurs algorithmes sur une série de configurations
-- 4. Reconstruire et reclasser les représentation graphiques d'une série de configurations classées
-- 5. Quitter
+
+1. Créer une série de configurations et les classer.    
+2. Reconstruire (sans reclasser) les représentation graphiques d'une série de configurations.  
+3. Comparer les performances de plusieurs algorithmes sur une série de configurations.  
+4. Reconstruire et reclasser les représentation graphiques d'une série de configurations classées.  
+5. Quitter.  
  
 Pour reconstruire les images à fournir à un CNN (après avoir décompressé un des deux dossiers fournis, `10000_uniforme_100_all.zip` ou `10000_uniforme_10_a_200_all.zip`): 
 - lancer le programme depuis le dossier contenant `10000_uniforme_100_all` ou `10000_uniforme_10_a_200_all`. Ce dossier doit contenir un sous-répertoire `csv`
