@@ -49,7 +49,8 @@ Menu principal:
 4. Reconstruire et reclasser les représentation graphiques d'une série de configurations classées.  
 5. Quitter.  
  
-Pour reconstruire les images à fournir à un CNN (après avoir décompressé un des deux dossiers fournis, `10000_uniforme_100_all.zip` ou `10000_uniforme_10_a_200_all.zip`): 
+Pour reconstruire les images à fournir à un CNN  
+(après avoir décompressé un des deux dossiers fournis, `10000_uniforme_100_all.zip` ou `10000_uniforme_10_a_200_all.zip`): 
 - lancer le programme depuis le dossier contenant `10000_uniforme_100_all` ou `10000_uniforme_10_a_200_all`. Ce dossier doit contenir un sous-répertoire `csv`
 - choisir l'option 4 et suivre les indications. Le programme créera, à coté du dossier `csv`, un dossier `nouveau` (si vous avez choisi ce nom) contenant trois sous-répertoires `train`, `validation` et `test` puis, dans chacun des ces répertoires, un dossier par algorithme.
 
