@@ -18,8 +18,7 @@ Ce programme permet de créer/Visualiser/Modifier une configuration.
 
 Lorsqu'on lance le programme depuis un interpréteur Python. La fenêtre de gauche représente l'espace dans lequel évoluent les nœuds du réseau. La création de nouveau nœuds se fait à la souris, les nœuds peuvent être déplacés par cliquer-déplacer et supprimés par un clic-droit.
 
-La portée des communications est par défaut fixée à 85 pixels, elle peut être modifiée. Elle est fixée à la création du "monde" dans le programme principal.  
-(ligne `canvas = Monde(500, 500, 85, 1, fen)`)
+La portée des communications est par défaut fixée à 85 pixels, elle peut être modifiée. Elle est fixée à la création du "monde" dans le programme principal (ligne `canvas = Monde(500, 500, 85, 1, fen)`).
 
 ![](outil1.png)
 
