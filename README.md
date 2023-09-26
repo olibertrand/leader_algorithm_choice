@@ -18,6 +18,9 @@ Ce programme permet de créer/Visualiser/Modifier une configuration.
 
 Lorsqu'on lance le programme depuis un interpréteur Python. La fenêtre de gauche représente l'espace dans lequel évoluent les nœuds du réseau. La création de nouveau nœuds se fait à la souris, les nœuds peuvent être déplacés par cliquer-déplacer et supprimés par un clic-droit.
 
+La portée des communications est par défaut fixée à 85 pixels, elle peut être modifiée. Elle est fixée à la création du "monde" dans le programme principal.  
+(ligne `canvas = Monde(500, 500, 85, 1, fen)`)
+
 ![](outil1.png)
 
 Les cases à cocher "centreGrav", "centreGeom" et "kBFS" permettent de colorier respectivement le centre de gravité en rouge, le centre géométrique en vert et les vainqueurs de l'algorithme kBFS en cyan.
@@ -48,7 +51,7 @@ Menu principal:
 3. Comparer les performances de plusieurs algorithmes sur une série de configurations.  
 4. Reconstruire et reclasser les représentation graphiques d'une série de configurations classées.  
 5. Quitter.  
- 
+
 Pour reconstruire les images à fournir à un CNN (après avoir cloné le dépôt): 
 
 - lancer le programme depuis le dossier `10000_uniforme_100_all` ou `10000_uniforme_10_a_200_all`. Ce dossier doit contenir un sous-répertoire `csv`
@@ -57,6 +60,12 @@ Pour reconstruire les images à fournir à un CNN (après avoir cloné le dépô
 ### 3. Le programme execution_directe_series.py
 
 Le script de ce programme montre des exemples d'utilisation des fonctions de `cree_configurations.py` sans passer par les menus interactifs, ce qui permet d'enchaîner plusieurs actions.
+
+- La fonction `stats` permet de créer une série de configurations, de les classer et de créer les représentations graphiques.
+- La fonction `redessine` permet de lire les données d'une série de configurations enregistrées en `csv` et de construire les représentations graphiques.  
+- La fonction `analyse_et_redessine` permet de réanalyser une série de configurations préenregistrées pour construire un nouveau classement.
+
+Pour toutes ces fonctions, la ligne `canvas = Monde(500, 500, 85, 1, fen)` peut permettre de modifier la portée des communications (valeur par défaut: 85).
 
 ## Traitement par un réseau de neurones
 
